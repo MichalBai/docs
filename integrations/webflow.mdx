@@ -1,0 +1,54 @@
+---
+title: "Publish articles directly from Pressmaster to Webflow"
+sidebarTitle: "Webflow"
+description: "Connect your Webflow CMS to Pressmaster and publish articles directly into a CMS collection — no manual copy-pasting between platforms."
+---
+
+Connect your Webflow site to Pressmaster and publish articles directly into your Webflow CMS collection — no manual copy-pasting between platforms. Pressmaster uses Webflow's CMS API to create new items in your collection, mapping article fields automatically.
+
+## Prerequisites
+
+- A Webflow site with a CMS collection configured for blog posts
+- Editor or Admin access to your Webflow project
+
+## Connect Webflow
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Settings > Integrations > Blog** in Pressmaster and toggle the blog switcher on.
+  </Step>
+  <Step title="Select Webflow">
+    Choose **Webflow** as your platform.
+  </Step>
+  <Step title="Authorize Pressmaster">
+    You'll be redirected to the Webflow authentication page. Log in and choose the workspace or site you want to connect, then click **Authorize App**.
+  </Step>
+  <Step title="Configure your collection">
+    After authenticating, the **Manage Webflow Integration** window opens. Select your Webflow site and the CMS collection you want to publish to.
+  </Step>
+  <Step title="Map your fields">
+    Map your collection fields to the corresponding article properties:
+
+    - **Article Title** — the field that stores the post title
+    - **Article Text** — the field for the main body content
+    - **Summary** — the field for the article summary
+    - **Slug** — the field for the URL slug
+    - **Image** — the field for the featured image
+    - **Categories** — the category field for organization
+    - **Author fields** — author name, bio, image, and email if your collection includes them
+  </Step>
+  <Step title="Choose article status">
+    Select whether articles should be **published** automatically or saved as **drafts** for review in Webflow.
+  </Step>
+  <Step title="Save the connection">
+    Click **Connect Webflow**. Pressmaster confirms the integration with a success message.
+  </Step>
+</Steps>
+
+## After connecting
+
+Articles published from Pressmaster appear as new items in your selected Webflow CMS collection. If you chose draft status, review and publish them from the Webflow Editor before they go live on your site.
+
+<Tip>
+  Make sure your Webflow CMS collection has the necessary fields (title, body, slug) before connecting. Pressmaster maps article content to these fields automatically.
+</Tip>

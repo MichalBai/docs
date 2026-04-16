@@ -1,0 +1,100 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Pressmaster",
+  "theme": "almond",
+  "logo": {
+    "light": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png",
+    "dark": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png"
+  },
+  "favicon": "https://media.brand.dev/fc3de6b1-ec4e-4d38-901f-b10f13d4e1d9.png",
+  "colors": {
+    "primary": "#818797",
+    "light": "#4a5365",
+    "dark": "#e9ecee"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Go to Pressmaster",
+      "href": "https://www.pressmaster.ai"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "credits"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/agent-team",
+              "features/content-twin",
+              "features/trendmaster",
+              "features/editor",
+              "features/pin-your-thoughts",
+              "features/auto-image-generation"
+            ]
+          },
+          {
+            "group": "Creating Content",
+            "pages": [
+              "creating-content/articles",
+              "creating-content/social-media-posts",
+              "creating-content/press-releases"
+            ]
+          },
+          {
+            "group": "Newsroom",
+            "pages": [
+              "newsroom/overview",
+              "newsroom/setup",
+              "newsroom/press-kit",
+              "newsroom/custom-domain"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/social-media",
+              "integrations/wordpress",
+              "integrations/webflow",
+              "integrations/wix",
+              "integrations/ghost"
+            ]
+          },
+          {
+            "group": "Account & Plans",
+            "pages": [
+              "account/plans",
+              "account/credits",
+              "account/brand-voice",
+              "account/faq"
+            ]
+          },
+          {
+            "group": "Agencies",
+            "pages": [
+              "agencies/white-label",
+              "agencies/client-management",
+              "agencies/interview-links"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "mobile/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

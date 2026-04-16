@@ -1,0 +1,116 @@
+{
+  "projectType": "saas",
+  "projectName": "Pressmaster",
+  "projectDescription": "Pressmaster is an AI-powered content creation platform that transforms your expertise into articles, social media posts, and press releases — distributed across your channels and major publications.",
+  "theme": "almond",
+  "primaryColor": "#818797",
+  "lightColor": "#4a5365",
+  "darkColor": "#e9ecee",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "credits"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/agent-team",
+              "features/content-twin",
+              "features/trendmaster",
+              "features/editor",
+              "features/pin-your-thoughts",
+              "features/auto-image-generation"
+            ]
+          },
+          {
+            "group": "Creating Content",
+            "pages": [
+              "creating-content/articles",
+              "creating-content/social-media-posts",
+              "creating-content/press-releases"
+            ]
+          },
+          {
+            "group": "Newsroom",
+            "pages": [
+              "newsroom/overview",
+              "newsroom/setup",
+              "newsroom/press-kit",
+              "newsroom/custom-domain"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/social-media",
+              "integrations/wordpress",
+              "integrations/webflow",
+              "integrations/wix",
+              "integrations/ghost"
+            ]
+          },
+          {
+            "group": "Account & Plans",
+            "pages": [
+              "account/plans",
+              "account/credits",
+              "account/brand-voice",
+              "account/faq"
+            ]
+          },
+          {
+            "group": "Agencies",
+            "pages": [
+              "agencies/white-label",
+              "agencies/client-management",
+              "agencies/interview-links"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "mobile/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI Agent-Team (Supernova) for autonomous content planning and creation",
+    "Content Twin — a personalized AI model trained on your thinking patterns",
+    "TrendMaster — real-time trend discovery across 500,000+ daily sources",
+    "Article, social media post, and press release creation",
+    "One-click publishing to LinkedIn, Twitter/X, Instagram, Facebook, and Bluesky",
+    "Press release distribution to 400+ publications including Business Insider and Yahoo Finance",
+    "Newsroom builder with custom domain support",
+    "Blog integrations for WordPress, Webflow, Wix, Ghost, and Blogger",
+    "White-label solution for agencies",
+    "Mobile app for capturing ideas on the go"
+  ],
+  "publicApiSurface": [
+    "Brand Voice setup",
+    "Content Twin training and chat",
+    "Supernova Agent-Team (Repurpose & Series / Plan & Create modes)",
+    "TrendMaster preferences and topic discovery",
+    "Article creation workflow",
+    "Social media post creation and scheduling",
+    "Press release creation and distribution (Marketplace)",
+    "Newsroom builder with custom domain and SEO settings",
+    "Integrations: WordPress.org, WordPress.com, Webflow, Wix, Ghost, Blogger",
+    "Social channel connections: LinkedIn, Twitter/X, Instagram, Facebook, Bluesky",
+    "White-label settings: logo, favicon, banner, subdomain",
+    "Credits dashboard and top-up system",
+    "Pin Your Thoughts (mobile capture)",
+    "Library (content repurposing)",
+    "Feedback and approval workflows (Agency plans)"
+  ]
+}

@@ -1,0 +1,73 @@
+---
+title: "White-label Pressmaster with your agency's branding"
+sidebarTitle: "White Label"
+description: "Configure Pressmaster with your agency logo, favicon, banner, and custom subdomain to give clients a fully branded content platform experience."
+---
+
+Pressmaster's white-label feature lets you replace all Pressmaster branding with your own — logo, favicon, banner, and a custom domain. Your clients log in at your subdomain and experience a platform that looks and feels like yours. No "powered by Pressmaster" attribution appears anywhere in their experience.
+
+## Requirements
+
+- Agency Starter plan or higher — white-label is an agency-only feature
+- Access to your agency dashboard
+- A domain you control, with access to its DNS settings
+
+## Set up white-label branding
+
+<Steps>
+  <Step title="Switch to your agency dashboard">
+    Click the workspace dropdown in the top navigation and select your agency. White-label settings are only accessible from the agency dashboard, not from individual client workspaces.
+  </Step>
+  <Step title="Open white-label settings">
+    Go to **Settings > White Label** to access all branding and domain options.
+  </Step>
+  <Step title="Upload your logo">
+    Upload your agency logo. This replaces the Pressmaster logo throughout the platform — on every page your clients see.
+  </Step>
+  <Step title="Add a favicon">
+    Upload a favicon file. This appears in the browser tab when clients access your branded platform.
+  </Step>
+  <Step title="Upload a banner">
+    Upload a banner image. Clients see this banner whenever they log in through your custom domain.
+  </Step>
+  <Step title="Configure your subdomain">
+    Choose a subdomain for your branded platform — for example, `app.youragency.com` or `content.youragency.com`. Do not use your root domain (`youragency.com`).
+  </Step>
+  <Step title="View DNS instructions">
+    Click **View Instructions** inside the domain settings panel. This shows you the exact CNAME record details you need to add at your domain provider.
+  </Step>
+  <Step title="Add a CNAME record at your domain provider">
+    Log in to your domain provider (GoDaddy, Namecheap, Cloudflare, or similar) and navigate to **DNS Settings**. Add a new record with the following values:
+
+    - **Type:** CNAME
+    - **Name:** your subdomain prefix only (e.g., `app` for `app.youragency.com`)
+    - **Value:** `target.pressmaster.ai`
+
+    Save the record.
+  </Step>
+  <Step title="Connect your domain in Pressmaster">
+    Return to **Settings > White Label** in Pressmaster. Enter your full subdomain (e.g., `app.youragency.com`) and click **Connect Domain**.
+  </Step>
+  <Step title="Wait for DNS propagation">
+    DNS changes typically take 30 minutes to 2 hours to propagate, depending on your provider. You'll see a success confirmation in Pressmaster once the connection is verified.
+  </Step>
+</Steps>
+
+<Warning>
+  Use a subdomain (e.g., `app.youragency.com`), not your root domain (`youragency.com`). CNAME records cannot be set on root domains.
+</Warning>
+
+## What's white-labeled after setup
+
+Once you've uploaded your logo, favicon, and banner and connected your subdomain, the full platform is branded as yours:
+
+- All platform pages and interfaces show your logo and branding
+- Interview links sent to clients display your logo, not Pressmaster's
+- Clients log in at your subdomain and see your branded platform throughout their session
+- No Pressmaster attribution appears anywhere in the client experience
+
+## Benefits
+
+- **Complete brand control** — the entire client experience reflects your agency identity
+- **Professional credibility** — clients access the platform through your own domain
+- **Client loyalty** — clients associate the platform with your agency, not Pressmaster

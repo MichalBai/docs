@@ -1,0 +1,46 @@
+---
+title: "Connect your Wix blog and publish directly from Pressmaster"
+sidebarTitle: "Wix"
+description: "Integrate your Wix blog with Pressmaster using an API key and Site ID to publish articles directly without leaving the content platform."
+---
+
+Connect your Wix site to Pressmaster and publish articles directly to your Wix blog. Once connected, every article you create in Pressmaster can be sent to your Wix blog with one click — no switching between platforms.
+
+## Prerequisites
+
+- A Wix site with the Blog app installed
+- Admin access to your Wix account
+
+## Connect Wix
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Settings > Integrations > Blog** in Pressmaster and toggle the blog switcher on.
+  </Step>
+  <Step title="Select Wix">
+    Choose **Wix** as your platform.
+  </Step>
+  <Step title="Generate a Wix API key">
+    In Wix, click the dropdown next to your user icon and select **Account Settings**. Navigate to the **API Keys** tab and click **Generate API Key**. Enter a name, assign the necessary permissions, and click **Generate Key**. Complete the account verification, then copy the generated API token.
+  </Step>
+  <Step title="Enter the API key in Pressmaster">
+    Return to Pressmaster and paste the copied token into the **API Key** field.
+  </Step>
+  <Step title="Retrieve your Site ID">
+    In the Wix Dashboard, open your website. Copy the Site ID from the browser URL — it's the UUID segment in the path (for example, `f72c67a2-2730-490d-8024-30896b222548`). Paste it into the **Site ID** field in Pressmaster.
+  </Step>
+  <Step title="Connect">
+    Click **Connect Wix**. Pressmaster verifies the credentials and displays a success message.
+  </Step>
+  <Step title="Set publishing preferences">
+    In the **Manage Wix Integration** window, choose whether articles should be **published** immediately or saved as **drafts**. Select an author from the list, then click **Update Wix Settings**.
+  </Step>
+</Steps>
+
+## After connecting
+
+Articles published from Pressmaster appear in your Wix Blog manager as drafts or published posts, depending on your preference setting. If you chose draft status, review and finalize them in Wix before they go live.
+
+<Tip>
+  Make sure the Wix Blog app is installed on your site before connecting. You can find it in the Wix App Market.
+</Tip>

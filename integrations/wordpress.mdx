@@ -1,0 +1,75 @@
+---
+title: "Publish articles directly from Pressmaster to WordPress"
+sidebarTitle: "WordPress"
+description: "Connect WordPress.org (self-hosted) or WordPress.com to Pressmaster and publish articles directly to your blog without leaving the platform."
+---
+
+Connect your WordPress site to Pressmaster and publish articles directly from the platform — no copy-pasting into WordPress. Pressmaster supports both WordPress.org (self-hosted) and WordPress.com (hosted). Choose the tab below that matches your setup.
+
+<Tabs>
+  <Tab title="WordPress.org">
+    WordPress.org is the self-hosted version. You'll authenticate using your site URL and application credentials rather than an OAuth redirect.
+
+    <Steps>
+      <Step title="Open Integrations">
+        Go to **Settings > Integrations > Blog** in Pressmaster and toggle the blog switcher on.
+      </Step>
+      <Step title="Select WordPress.org">
+        Choose **WordPress.org** as your platform.
+      </Step>
+      <Step title="Get your application username">
+        In your WordPress admin panel, click the dropdown next to your user icon and select **Edit Profile**. Copy your **Username** and paste it into the **Application User Name** field in Pressmaster.
+      </Step>
+      <Step title="Generate an application password">
+        Still in your WordPress profile, find the **Application Passwords** section. Enter a name for the password (for example, "Pressmaster") and click **Add New Application Password**. Copy the generated password and paste it into the **Application Password** field in Pressmaster.
+      </Step>
+      <Step title="Enter your site URL">
+        Copy the full URL of your WordPress.org site and paste it into the **Site URL** field in Pressmaster.
+      </Step>
+      <Step title="Connect">
+        Click **Connect WordPress.org**. Pressmaster verifies the credentials and confirms the connection.
+      </Step>
+      <Step title="Choose publish or draft">
+        Select whether articles should be **published** immediately or saved as **drafts** for review. Click **Save** to apply your preference.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="WordPress.com">
+    WordPress.com is the hosted version. The connection uses an OAuth redirect — no credentials to copy.
+
+    <Steps>
+      <Step title="Open Integrations">
+        Go to **Settings > Integrations > Blog** in Pressmaster and toggle the blog switcher on.
+      </Step>
+      <Step title="Select WordPress.com">
+        Choose **WordPress.com** as your platform.
+      </Step>
+      <Step title="Authorize Pressmaster">
+        You'll be redirected to the WordPress.com authentication page. Enter your email or username, then your password, and click **Log In**.
+      </Step>
+      <Step title="Approve access">
+        Click **Approve** to grant Pressmaster access to your WordPress.com account. You'll be redirected back to Pressmaster.
+      </Step>
+      <Step title="Select your site">
+        A list of your WordPress.com sites will appear. Select the site you want to connect.
+      </Step>
+      <Step title="Set publishing preferences">
+        Choose whether articles should be **published** immediately or saved as **drafts**. Optionally select an author to credit. Click **Connect WordPress.com** to finalize.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## After connecting
+
+When you click **Publish Article** in Pressmaster, the article is sent directly to your WordPress site and published according to your preference (publish immediately or save as draft). Scheduled posts publish automatically at the scheduled time.
+
+When publishing to WordPress.com, Pressmaster displays your site's categories so you can select the right one for each article.
+
+<Warning>
+  If you choose Marketplace as your article's publishing destination, it won't go to your WordPress blog. Set your destination to your blog before publishing.
+</Warning>
+
+<Tip>
+  Once your blog is connected, you can also publish to it from the Agent-Team's Calendar — select your blog as the destination for any content item.
+</Tip>

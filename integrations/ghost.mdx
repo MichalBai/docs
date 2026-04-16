@@ -1,0 +1,54 @@
+---
+title: "Connect Ghost and publish articles from Pressmaster"
+sidebarTitle: "Ghost"
+description: "Connect Ghost to Pressmaster via an Admin API key to publish articles directly to your Ghost publication — self-hosted or Ghost Pro."
+---
+
+Connect your Ghost publication to Pressmaster using Ghost's Admin API key and publish articles directly from Pressmaster. This integration works with both self-hosted Ghost and Ghost Pro.
+
+## Prerequisites
+
+- A Ghost publication (self-hosted or Ghost Pro)
+- Admin access to generate an Admin API key in Ghost
+
+## Get your Ghost Admin API key
+
+<Steps>
+  <Step title="Open Ghost Settings">
+    In your Ghost Admin panel, go to **Settings > Integrations**.
+  </Step>
+  <Step title="Add a custom integration">
+    Click **Add custom integration** and enter a name (for example, "Pressmaster"). Click **Add**.
+  </Step>
+  <Step title="Copy your credentials">
+    Ghost displays the integration details. Copy the **Admin API Key** and the **API URL** — you'll need both in Pressmaster.
+  </Step>
+</Steps>
+
+## Connect Ghost in Pressmaster
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Settings > Integrations > Blog** in Pressmaster and toggle the blog switcher on.
+  </Step>
+  <Step title="Select Ghost">
+    Choose **Ghost** as your platform.
+  </Step>
+  <Step title="Enter your credentials">
+    Paste your Ghost **API URL** and **Admin API Key** into the corresponding fields.
+  </Step>
+  <Step title="Connect">
+    Click **Connect Ghost**. Pressmaster verifies the connection and displays a success message.
+  </Step>
+  <Step title="Set publishing preferences">
+    In the **Manage Ghost Integration** window, select whether articles should be **published** immediately or saved as **drafts**. Choose an author from the list, then click **Update Ghost Settings**.
+  </Step>
+</Steps>
+
+## After connecting
+
+Articles published from Pressmaster appear in the **Posts** section of your Ghost publication. If you saved them as drafts, review and publish them from Ghost Admin when you're ready.
+
+<Tip>
+  Ghost integration works with both Ghost.org (Ghost Pro) and self-hosted Ghost installations. Use the same Admin API key setup steps for either option.
+</Tip>
