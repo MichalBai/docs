@@ -1,14 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Pressmaster",
-  "theme": "almond",
+  "theme": "aspen",
   "logo": {
     "light": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png",
     "dark": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png"
   },
   "favicon": "https://media.brand.dev/fc3de6b1-ec4e-4d38-901f-b10f13d4e1d9.png",
   "colors": {
-    "primary": "#818797",
+    "primary": "#311133",
     "light": "#4a5365",
     "dark": "#e9ecee"
   },
@@ -26,11 +26,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "credits"
-            ]
+            "pages": ["introduction", "quickstart", "credits"]
           },
           {
             "group": "Core Features",
@@ -89,9 +85,7 @@
           },
           {
             "group": "Mobile App",
-            "pages": [
-              "mobile/overview"
-            ]
+            "pages": ["mobile/overview"]
           }
         ]
       }
