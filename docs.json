@@ -29,22 +29,43 @@
             "pages": ["introduction", "quickstart", "credits"]
           },
           {
-            "group": "Core Features",
-            "pages": [
-              "features/agent-team",
-              "features/content-twin",
-              "features/trendmaster",
-              "features/editor",
-              "features/pin-your-thoughts",
-              "features/auto-image-generation"
-            ]
+            "group": "Dashboard",
+            "pages": ["dashboard/overview"]
+          },
+          {
+            "group": "Find Ideas",
+            "pages": ["find-ideas/overview"]
           },
           {
             "group": "Creating Content",
             "pages": [
-              "creating-content/articles",
-              "creating-content/social-media-posts",
-              "creating-content/press-releases"
+              "creating-content/overview",
+              "creating-content/brainstorm",
+              "creating-content/instant-creation",
+              "creating-content/plan-ahead"
+            ]
+          },
+          {
+            "group": "Content Library",
+            "pages": ["content-library/overview"]
+          },
+          {
+            "group": "Calendar",
+            "pages": ["calendar/overview"]
+          },
+          {
+            "group": "Performance",
+            "pages": ["performance/overview"]
+          },
+          {
+            "group": "Agent Studio",
+            "pages": ["agent-studio/overview"]
+          },
+          {
+            "group": "Knowledge",
+            "pages": [
+              "knowledge/identityos",
+              "knowledge/saved-ideas"
             ]
           },
           {
@@ -71,7 +92,6 @@
             "pages": [
               "account/plans",
               "account/credits",
-              "account/brand-voice",
               "account/faq"
             ]
           },
