@@ -3,8 +3,8 @@
   "name": "Pressmaster",
   "theme": "aspen",
   "logo": {
-    "light": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png",
-    "dark": "https://media.brand.dev/44f1f508-5bc5-422b-a741-c7be1cbf3500.png"
+    "light": "/logo/pressmaster-logo.png",
+    "dark": "/logo/pressmaster-logo.png"
   },
   "favicon": "https://media.brand.dev/fc3de6b1-ec4e-4d38-901f-b10f13d4e1d9.png",
   "colors": {
