@@ -9,8 +9,11 @@
   "favicon": "https://media.brand.dev/fc3de6b1-ec4e-4d38-901f-b10f13d4e1d9.png",
   "colors": {
     "primary": "#311133",
-    "light": "#4a5365",
-    "dark": "#e9ecee"
+    "light": "#ffffff",
+    "dark": "#000000"
+  },
+  "contextual": {
+    "options": ["assistant", "copy", "claude", "chatgpt"]
   },
   "navbar": {
     "primary": {
@@ -22,7 +25,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Help Center",
         "groups": [
           {
             "group": "Get Started",
@@ -63,10 +66,7 @@
           },
           {
             "group": "Knowledge",
-            "pages": [
-              "knowledge/identityos",
-              "knowledge/saved-ideas"
-            ]
+            "pages": ["knowledge/identityos", "knowledge/saved-ideas"]
           },
           {
             "group": "Newsroom",
@@ -89,11 +89,7 @@
           },
           {
             "group": "Account & Plans",
-            "pages": [
-              "account/plans",
-              "account/credits",
-              "account/faq"
-            ]
+            "pages": ["account/plans", "account/credits", "account/faq"]
           },
           {
             "group": "Agencies",
@@ -106,6 +102,15 @@
           {
             "group": "Mobile App",
             "pages": ["mobile/overview"]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Guides",
+            "pages": ["guides/overview"]
           }
         ]
       }
