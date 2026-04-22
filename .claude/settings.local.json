@@ -5,7 +5,10 @@
       "WebSearch",
       "WebFetch(domain:www.mintlify.com)",
       "Bash(python -c \"import json; json.load\\(open\\('docs.json'\\)\\); print\\('valid'\\)\")",
-      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('docs.json','utf8'\\)\\); console.log\\('valid'\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('docs.json','utf8'\\)\\); console.log\\('valid'\\)\")",
+      "Bash(pandoc \"C:\\\\Users\\\\banas\\\\Downloads\\\\pressmaster-features \\(1\\).docx\" -t plain)",
+      "Read(//c/Users/banas/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/a6300d2c-2415-4703-b211-481703f1acc1/c0ab8b5f-3a23-4798-a04e-3c0bc753d410/skills/docx/**)",
+      "Bash(python scripts/office/unpack.py \"C:\\\\Users\\\\banas\\\\Downloads\\\\pressmaster-features \\(1\\).docx\" \"C:\\\\Users\\\\banas\\\\Downloads\\\\pressmaster-features-unpacked\")"
     ]
   }
 }

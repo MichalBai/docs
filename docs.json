@@ -13,7 +13,7 @@
     "dark": "#000000"
   },
   "contextual": {
-    "options": ["assistant", "copy", "claude", "chatgpt"]
+    "options": ["assistant"]
   },
   "navbar": {
     "primary": {
