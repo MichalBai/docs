@@ -32,12 +32,14 @@
             "pages": ["introduction", "quickstart", "credits"]
           },
           {
-            "group": "Dashboard",
-            "pages": ["dashboard/overview"]
-          },
-          {
-            "group": "Find Ideas",
-            "pages": ["find-ideas/overview"]
+            "group": "Platform",
+            "pages": [
+              "dashboard/overview",
+              "find-ideas/overview",
+              "content-library/overview",
+              "calendar/overview",
+              "performance/overview"
+            ]
           },
           {
             "group": "Creating Content",
@@ -45,28 +47,23 @@
               "creating-content/overview",
               "creating-content/brainstorm",
               "creating-content/instant-creation",
-              "creating-content/plan-ahead"
+              "creating-content/plan-ahead",
+              "creating-content/editor"
             ]
           },
           {
-            "group": "Content Library",
-            "pages": ["content-library/overview"]
-          },
-          {
-            "group": "Calendar",
-            "pages": ["calendar/overview"]
-          },
-          {
-            "group": "Performance",
-            "pages": ["performance/overview"]
-          },
-          {
             "group": "Agent Studio",
-            "pages": ["agent-studio/overview"]
+            "pages": [
+              "agent-studio/getting-started",
+              "agent-studio/advanced"
+            ]
           },
           {
             "group": "Knowledge",
-            "pages": ["knowledge/identityos", "knowledge/saved-ideas"]
+            "pages": [
+              "knowledge/identityos",
+              "knowledge/saved-ideas"
+            ]
           },
           {
             "group": "Newsroom",
@@ -78,18 +75,16 @@
             ]
           },
           {
-            "group": "Integrations",
+            "group": "Publish & Distribute",
             "pages": [
+              "integrations/overview",
               "integrations/social-media",
               "integrations/wordpress",
               "integrations/webflow",
               "integrations/wix",
-              "integrations/ghost"
+              "integrations/ghost",
+              "integrations/marketplace"
             ]
-          },
-          {
-            "group": "Account & Plans",
-            "pages": ["account/plans", "account/credits", "account/faq"]
           },
           {
             "group": "Agencies",
@@ -100,8 +95,13 @@
             ]
           },
           {
-            "group": "Mobile App",
-            "pages": ["mobile/overview"]
+            "group": "Account",
+            "pages": [
+              "account/plans",
+              "account/credits",
+              "account/faq",
+              "mobile/overview"
+            ]
           }
         ]
       },
