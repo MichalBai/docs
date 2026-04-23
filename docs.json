@@ -19,7 +19,7 @@
     "primary": {
       "type": "button",
       "label": "Go to Pressmaster",
-      "href": "https://www.pressmaster.ai"
+      "href": "https://app.pressmaster.ai"
     }
   },
   "navigation": {
