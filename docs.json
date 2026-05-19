@@ -46,9 +46,9 @@
             "pages": [
               "creating-content/overview",
               "creating-content/explore-ideas",
-              "creating-content/interview",
               "creating-content/instant-creation",
               "creating-content/plan-ahead",
+              "creating-content/interview",
               "creating-content/editor"
             ]
           },
@@ -72,11 +72,6 @@
             "group": "Publish & Distribute",
             "pages": [
               "integrations/overview",
-              "integrations/social-media",
-              "integrations/wordpress",
-              "integrations/webflow",
-              "integrations/wix",
-              "integrations/ghost",
               "integrations/marketplace"
             ]
           },
@@ -111,20 +106,19 @@
             "pages": ["agent-studio/advanced"]
           },
           {
-            "group": "Coming Soon",
+            "group": "Roadmap",
             "pages": [
-              "agent-studio/agents-managing-agents",
-              "agent-studio/playbooks"
+              "agent-studio/agents-managing-agents"
             ]
           }
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Playbooks",
         "groups": [
           {
-            "group": "Guides",
-            "pages": ["guides/overview"]
+            "group": "Playbooks",
+            "pages": ["agent-studio/playbooks"]
           }
         ]
       }
