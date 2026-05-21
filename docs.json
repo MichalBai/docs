@@ -106,6 +106,10 @@
             "pages": ["agent-studio/advanced"]
           },
           {
+            "group": "Playbooks",
+            "pages": ["agent-studio/playbooks"]
+          },
+          {
             "group": "Roadmap",
             "pages": [
               "agent-studio/agents-managing-agents"
@@ -114,11 +118,11 @@
         ]
       },
       {
-        "tab": "Playbooks",
+        "tab": "Guides",
         "groups": [
           {
-            "group": "Playbooks",
-            "pages": ["agent-studio/playbooks"]
+            "group": "Guides",
+            "pages": ["guides/overview"]
           }
         ]
       }
