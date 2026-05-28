@@ -122,7 +122,14 @@
         "groups": [
           {
             "group": "Guides",
-            "pages": ["guides/overview"]
+            "pages": [
+              "guides/full-setup-guide",
+              "guides/ai-interviews",
+              "guides/agent-studio-setup",
+              "guides/twin-tutorial",
+              "guides/top-workflows",
+              "guides/grow-content-audience-revenue"
+            ]
           }
         ]
       }
