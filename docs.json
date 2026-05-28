@@ -95,6 +95,22 @@
         ]
       },
       {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/full-setup-guide",
+              "guides/ai-interviews",
+              "guides/agent-studio-setup",
+              "guides/twin-tutorial",
+              "guides/top-workflows",
+              "guides/grow-content-audience-revenue"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Agent Studio",
         "groups": [
           {
@@ -113,22 +129,6 @@
             "group": "Roadmap",
             "pages": [
               "agent-studio/agents-managing-agents"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Guides",
-            "pages": [
-              "guides/full-setup-guide",
-              "guides/ai-interviews",
-              "guides/agent-studio-setup",
-              "guides/twin-tutorial",
-              "guides/top-workflows",
-              "guides/grow-content-audience-revenue"
             ]
           }
         ]
