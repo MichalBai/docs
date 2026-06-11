@@ -1,10 +1,10 @@
 ---
 title: "Connect your own domain to the Pressmaster Newsroom"
 sidebarTitle: "Custom Domain"
-description: "Connect your own domain to the Pressmaster Newsroom by adding a CNAME DNS record — takes about 5 minutes to configure, then up to 2 hours to propagate."
+description: "Connect your own domain to the Pressmaster Newsroom by adding a CNAME DNS record, takes about 5 minutes to configure, then up to 2 hours to propagate."
 ---
 
-Connect your own domain to your Pressmaster Newsroom so journalists and readers visit a branded URL like `news.yourcompany.com` — not a Pressmaster subdomain. This takes about 5 minutes to configure, then 30 minutes to 2 hours for DNS propagation.
+Connect your own domain to your Pressmaster Newsroom so journalists and readers visit a branded URL like `news.yourcompany.com`, not a Pressmaster subdomain. This takes about 5 minutes to configure, then 30 minutes to 2 hours for DNS propagation.
 
 ## Before you start
 
@@ -17,7 +17,7 @@ You need access to your domain provider's DNS settings. Common providers include
     Go to **Newsroom Settings > Domain** in your Pressmaster dashboard.
   </Step>
   <Step title="Enter your subdomain">
-    Click **Connect Domain** and enter the full subdomain you want to use — for example, `news.yourcompany.com`.
+    Click **Connect Domain** and enter the full subdomain you want to use, for example, `news.yourcompany.com`.
   </Step>
   <Step title="View your DNS configuration details">
     Click **View Instructions**. Pressmaster displays the exact DNS values you need to enter with your domain provider.
@@ -32,7 +32,7 @@ You need access to your domain provider's DNS settings. Common providers include
     Enter your subdomain prefix in the **Name** (or **Host**) field. For `news.yourcompany.com`, enter `news`.
   </Step>
   <Step title="Set the Value field">
-    Enter `target.pressmaster.ai` in the **Value** (or **Points to**) field. Copy this exactly — no trailing spaces or extra characters.
+    Enter `target.pressmaster.ai` in the **Value** (or **Points to**) field. Copy this exactly, no trailing spaces or extra characters.
   </Step>
   <Step title="Save the DNS record">
     Save the new CNAME record. Your provider may show a confirmation message or simply update the record list.
@@ -46,13 +46,13 @@ You need access to your domain provider's DNS settings. Common providers include
 </Steps>
 
 <Warning>
-  Always use a subdomain (e.g., `news.yourcompany.com`), not your root domain (`yourcompany.com`). Pressmaster requires a subdomain for the CNAME configuration — connecting a root domain will not work.
+  Always use a subdomain (e.g., `news.yourcompany.com`), not your root domain (`yourcompany.com`). Pressmaster requires a subdomain for the CNAME configuration, connecting a root domain will not work.
 </Warning>
 
 ## Troubleshooting
 
 **Connection is taking longer than 2 hours**
-DNS propagation can take up to 48 hours with some providers — this is normal and outside of Pressmaster's control. Check again after a few hours before contacting support.
+DNS propagation can take up to 48 hours with some providers, this is normal and outside of Pressmaster's control. Check again after a few hours before contacting support.
 
 **Seeing a connection error**
 Double-check two things: the subdomain you entered in Pressmaster includes the full address (e.g., `news.yourcompany.com`, not just `news`), and the CNAME value is exactly `target.pressmaster.ai`. Even a single character difference will prevent the connection.
@@ -67,8 +67,8 @@ If you're still having trouble, contact the Pressmaster support team at [support
 Once your domain is connected, configure your Newsroom's SEO settings so it ranks well in search results.
 
 1. Go to **Newsroom Settings > General**
-2. Enter a **Website Title** — aim for 50–60 characters, include your company name and a relevant keyword
-3. Enter a **Website Description** — aim for 130–160 characters, describe what visitors will find and include a call to action
+2. Enter a **Website Title**, aim for 50–60 characters, include your company name and a relevant keyword
+3. Enter a **Website Description**, aim for 130–160 characters, describe what visitors will find and include a call to action
 4. Save your settings
 
 These values appear in Google search results when your Newsroom is indexed, so make them specific and compelling.
@@ -78,5 +78,5 @@ These values appear in Google search results when your Newsroom is indexed, so m
 **Example meta description:** `Stay updated with the latest announcements, product launches, and company news from Acme Corp. Visit our official Newsroom for press releases and industry insights.`
 
 <Tip>
-  Set your Newsroom's meta title and description in **Settings > General** right after connecting your domain. Search engines index new domains quickly — having your SEO metadata in place from day one ensures your Newsroom is discoverable as soon as it goes live.
+  Set your Newsroom's meta title and description in **Settings > General** right after connecting your domain. Search engines index new domains quickly, having your SEO metadata in place from day one ensures your Newsroom is discoverable as soon as it goes live.
 </Tip>
