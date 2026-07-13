@@ -18,6 +18,19 @@ Each agent has its own task board showing current work, priorities, and progress
 
 For every task you can see: status (backlog, in progress, paused, recurring), cost, model used, output produced, last run time, and next scheduled run. Nothing happens in the dark.
 
+Tasks are organized by status:
+
+| Status | Meaning |
+|---|---|
+| **Backlog** | Queued, not started yet |
+| **In progress** | Currently being worked on |
+| **Paused** | Manually paused |
+| **Recurring** | On a schedule, runs automatically |
+| **Completed** | Finished successfully |
+| **Failed** | Encountered an error |
+
+Click into any task to see its subtasks, the prompt it used, and a progress log. To add a task manually, click **Add Task** or send the instruction directly via your connected channel.
+
 ## Background task scheduling
 
 Set up tasks, routines, and workflows with deadlines and priorities. Agents execute them in the background on their own schedule, work gets done while you sleep. Truly autonomous execution.
@@ -80,9 +93,17 @@ Agents have full access to the Pressmaster UI, creating drafts, managing your Co
 
 ## Artifact Library
 
-All research, findings, and outputs from your agents are stored and organized in the Artifact Library. Nothing is wasted, every agent output is an asset you can review, reuse, or repurpose at any time.
+When an agent produces something too long for a chat message — research documents, strategy briefs, process outlines — it saves it as an artifact. You can find all agent outputs in the **Artifact Library**, organized and ready to review, reuse, or repurpose. Each artifact shows which agent produced it.
 
 You can reference any artifact directly in chat. Just tell your agent the name and date of the artifact and it will pull it up and work with it.
+
+## Custom skills
+
+Skills are reusable workflows and knowledge files that agents draw on when executing tasks. Pressmaster ships with pre-built system skills covering research, quality assurance, content strategy, communication, virality, hooks, and more.
+
+**Don't create custom skills at the start.** Use the pre-built ones and get familiar with how the agent works first. Over time you'll notice patterns — things you keep explaining the same way, or workflows that aren't quite right for your account. That's when to create a skill.
+
+To create one, tell the agent what you want: *"Create a skill for how I like to handle Reddit comments"* or *"Build a skill for our weekly content review process."* The agent drafts it for you.
 
 ## Recommended workflows
 
@@ -98,10 +119,18 @@ Set your agent to analyze your twin, brand guide, and live web data twice a week
 Every two weeks, your agent scans your content library and analytics to surface what's working, what's underperforming, and what's missing. It returns a prioritized list of content ideas based on your actual data, so you iterate on evidence rather than instinct.
 
 **4. Note-taker scan (weekly)**
-Connect your note-taker (Fireflies, Granola, or similar) and set a weekly scan. Your agent reviews recent call transcripts and extracts the strongest ideas, stories, and insights worth turning into content. One good call can produce content you'd never think to write on your own.
+Connect your note-taker (Fireflies, Fathom, Granola, or similar) and set a weekly scan. Your agent reviews recent call transcripts and extracts the strongest ideas, stories, and insights worth turning into content. One good call can produce content you'd never think to write on your own.
 
 **5. SEO/GEO campaign**
 Connect Google Analytics and Google Search Console, then set your agent to run a continuous SEO content campaign. It does keyword research, identifies gaps, plans topics, monitors what's ranking for competitors, and keeps your content pipeline loaded with search-optimized ideas. This replaces a $200/month SEO tool.
+
+### Discover more workflows
+
+In Agent Studio, click **Automate** to see a list of suggested workflows based on how you use Pressmaster — including a weekly performance report delivered directly to your Telegram or WhatsApp.
+
+<Tip>
+  When you have an idea on the go, send a voice note to your agent on Telegram or WhatsApp and tell it to save the idea. The agent stores it in your account. Your best thoughts happen in the moment — capture them before they disappear.
+</Tip>
 
 ## Credit tips
 
