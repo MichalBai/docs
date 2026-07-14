@@ -81,6 +81,13 @@
             ]
           },
           {
+            "group": "Press Release",
+            "pages": [
+              "press-release/overview",
+              "press-release/guidelines"
+            ]
+          },
+          {
             "group": "Agencies",
             "pages": [
               "agencies/white-label",
