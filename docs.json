@@ -120,11 +120,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["agent-studio/getting-started"]
-          },
-          {
-            "group": "Connectors",
-            "pages": ["agent-studio/connectors"]
+            "pages": ["agent-studio/getting-started", "agent-studio/connectors"]
           },
           {
             "group": "Advanced",
