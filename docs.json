@@ -69,9 +69,14 @@
             ]
           },
           {
-            "group": "Publish & Distribute",
+            "group": "Integrations",
             "pages": [
               "integrations/overview",
+              "integrations/social-media",
+              "integrations/wordpress",
+              "integrations/webflow",
+              "integrations/wix",
+              "integrations/ghost",
               "integrations/marketplace"
             ]
           },
@@ -116,6 +121,10 @@
           {
             "group": "Getting Started",
             "pages": ["agent-studio/getting-started"]
+          },
+          {
+            "group": "Connectors",
+            "pages": ["agent-studio/connectors"]
           },
           {
             "group": "Advanced",
