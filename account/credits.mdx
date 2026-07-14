@@ -22,20 +22,46 @@ All non-AI features, browsing the dashboard, managing integrations, scheduling p
 
 Credit usage is approximate and varies with content length and complexity.
 
+**Content creation**
+
 | Feature | Credits (approx) |
 |---|---|
-| Chat with AI (articles, posts) | ~30 / message |
-| Post creation | ~90 |
-| Article creation | ~150 |
-| Optimize content | ~75 |
-| Twin usage | ~100 |
-| Twin training | ~300 / asset |
-| Twin chat | ~95 |
-| Hook & angle simulation | ~20 |
+| Post creation | ~30 |
+| Article creation | ~50 |
+| Image generation | ~125 |
+| Citations / fact-checking | ~30 |
+| Hook & angle simulation | ~15 |
+| Audio transcription | ~30 |
+| Pin / save idea | ~15 |
 
-## Agent Team credit behavior
+**Interviews & brainstorm**
 
-Agent Team is a coordinated multi-agent system, not a single action. Each run bundles ideation generation, agent chat and reasoning, and content calendar planning across a chosen time horizon. This is why it consumes more credits than single-step features, a 30-day content calendar uses significantly more credits than a 7-day plan. Choose the planning scope that matches your current need to manage credit usage efficiently.
+| Feature | Credits (approx) |
+|---|---|
+| Interview or Brainstorm session | ~250 |
+| Twin-guided interview | ~250 |
+| Agent interview | ~70 |
+
+**Content Twin**
+
+| Feature | Credits (approx) |
+|---|---|
+| Twin usage in content | ~100 |
+| Twin training | ~250 per asset |
+| Twin chat | ~100 |
+
+**Agent Studio**
+
+| Feature | Credits (approx) |
+|---|---|
+| Agent chat | ~200 |
+| Agent topic discovery | ~650 |
+| Agent content calendar | ~500 |
+| Trend analysis | ~600 |
+
+## Agent Studio credit behavior
+
+Agent Studio is a coordinated multi-agent system, not a single action. Each run bundles ideation generation, agent chat and reasoning, and content calendar planning across a chosen time horizon. This is why it consumes more credits than single-step features — a 30-day content calendar uses significantly more credits than a 7-day plan. Choose the planning scope that matches your current need to manage credit usage efficiently.
 
 ## Features with dynamic credit usage
 
@@ -44,9 +70,10 @@ Some features scale their credit draw based on the depth or size of the output:
 | Feature | Credit behavior |
 |---|---|
 | Content generation | Charged per generated output |
-| Agent Team | Scales with planning scope |
-| Twin-Guided Interview | Scales with interview depth |
+| Agent content calendar | Scales with planning scope |
+| Twin-guided interview | Scales with interview depth |
 | Twin training | Scales with training batch size |
+| Agent topic discovery | Scales with research depth |
 
 ## Credit allowances by plan
 
