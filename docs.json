@@ -124,7 +124,11 @@
           },
           {
             "group": "Advanced",
-            "pages": ["agent-studio/advanced"]
+            "pages": [
+              "agent-studio/agent-control",
+              "agent-studio/intelligence",
+              "agent-studio/workflows"
+            ]
           },
           {
             "group": "Playbooks",
