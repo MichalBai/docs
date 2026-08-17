@@ -1,0 +1,70 @@
+---
+title: "How to Connect Pressmaster to Claude (MCP)"
+icon: "leaf"
+---
+
+Pressmaster's MCP server lets you drive your entire content workflow from inside Claude — creating drafts, running interviews, scheduling posts, and pulling analytics — without opening the Pressmaster app.
+
+**MCP URL:** `https://app.pressmaster.ai/mcp`
+
+MCP (Model Context Protocol) is an open standard that lets AI assistants connect directly to external tools. Instead of Claude telling you what to do in Pressmaster, Claude does it: creates the draft, attaches the channels, sets the schedule, reads the numbers back.
+
+Before you start An active Pressmaster account and workspace Claude on a plan that supports custom connectors (Pro, Max, Team, or Enterprise)
+
+You don't need an API key. Authentication runs through OAuth in your browser.
+
+Setup
+
+1. Open connector settings
+
+In Claude (web or desktop), go to Settings → Connectors, scroll past the directory, and click Add custom connector.
+
+2. Add the server
+
+Paste the URL:
+
+[https://app.pressmaster.ai/mcp](https://app.pressmaster.ai/mcp)
+
+Name it "Pressmaster" and confirm.
+
+3. Authorize
+
+Claude opens a Pressmaster login window. Sign in and approve access.
+
+Important: the connection binds to the workspace you authorize. If you belong to more than one workspace, make sure you're signed into the right one before approving.
+
+4. Verify
+
+Start a new conversation and ask:
+
+"What's in my Pressmaster content library?"
+
+If Claude returns your actual drafts and stages, you're connected. If it comes back empty and you know you have content, you're likely authorized into the wrong workspace — disconnect and reauthorize.
+
+What you can do
+
+Create content in any format Articles, social posts, newsletters, video scripts. Ask, review in chat, and it lands in your Content Library as a draft.
+
+"Write a LinkedIn post about why founders confuse their champion with their budget holder. Use my brand voice."
+
+Run content interviews Start a Pressmaster interview from Claude, answer the questions, and get structured source material back.
+
+"Start a content interview on go-to-market positioning failures."
+
+Write against your Brand Guide Claude can read your brand guide and voices, so output sounds like you rather than like a model.
+
+Schedule and publish Attach connected channels, set a publish time, or push live now.
+
+"Schedule that post to LinkedIn for Thursday at 9am."
+
+Read performance data Reach, impressions, engagement, follower deltas, and top posts for any date range.
+
+"Which posts performed best in the last 30 days, and what do they have in common?"
+
+Save and load ideas — anything worth keeping goes into Saved Ideas and comes back when you need it.
+
+Train and query your Digital Twin — ingest text, run knowledge interviews, and chat with it in the same session.
+
+Troubleshooting Symptom	Fix Tools don't appear after connecting	Start a new conversation — Claude loads the tool list at session start Authorization keeps failing	Confirm you're logged into the correct Pressmaster account in the same browser, clear the session, retry Analytics return zeros	Expected if nothing is published yet, or a platform sync hasn't run. Ask Claude to check sync status for per-channel timestamps A post won't schedule	Scheduling needs a connected, credentialed channel and a future timestamp. Reconnect expired channels in Pressmaster first A draft won't update	Only drafts in an editable stage can be changed. Scheduled, published, and completed items are locked — move it back to a draft stage Claude asks for confirmation on every action	Normal. Write and publish actions require your approval before they run Why it's worth doing
+
+Content tools normally live in an app you have to remember to open. As an MCP connector, Pressmaster lives inside the conversation where you're already thinking — so an idea can become a scheduled post without a context switch, and without dying in a notes app first.
