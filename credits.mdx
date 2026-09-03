@@ -1,10 +1,10 @@
 ---
 title: "How Pressmaster credits work and when they're used"
 sidebarTitle: "Credits"
-description: "Credits are the usage currency for AI actions in Pressmaster, covering writing, editing, trend analysis, and agent reasoning, reset monthly on your plan."
+description: "Credits are the usage currency for AI actions in Pressmaster, covering writing, editing, hook simulation, and agent reasoning, reset monthly on your plan."
 ---
 
-Credits represent AI work done on your behalf. Every time Pressmaster writes, edits, repurposes, plans, analyzes trends, or runs agent reasoning, it draws from your credit balance. You never deal with tokens, compute costs, or technical limits, credits abstract all of that into one simple, predictable currency that resets to a set level each month.
+Credits represent AI work done on your behalf. Every time Pressmaster writes, edits, repurposes, plans, simulates hooks, or runs agent reasoning, it draws from your credit balance. You never deal with tokens, compute costs, or technical limits, credits abstract all of that into one simple, predictable currency that resets to a set level each month.
 
 ## What credits cover
 
@@ -12,7 +12,7 @@ Credits are used for any action that involves AI:
 
 - Writing, editing, and repurposing content
 - Content planning and ideation
-- Trend analysis and hook simulations
+- Hook & angle simulations
 - Agent-based reasoning and coordination (Agent Team)
 
 Non-AI features, like browsing the dashboard, managing integrations, or scheduling posts, are always unlimited and never consume credits.
@@ -25,9 +25,9 @@ Credit usage is approximate and may vary slightly based on content length and co
 
 | Action | Credits (approx) |
 |---|---|
-| Post creation | ~30 |
-| Article creation | ~50 |
-| Image generation | ~125 |
+| Post generation | 33 |
+| Article generation | 51 |
+| Image generation | 124 |
 | Citations / fact-checking | ~30 |
 | Hook & angle simulation | ~15 |
 | Audio transcription | ~30 |
@@ -37,28 +37,35 @@ Credit usage is approximate and may vary slightly based on content length and co
 
 | Action | Credits (approx) |
 |---|---|
-| Interview or Brainstorm session | ~250 |
-| Twin-guided interview | ~250 |
+| Brainstorm message | Dynamic, ~42 avg |
+| Plan Ahead message | Dynamic, ~31–54 |
+| Content interview (text) | 5 |
+| Content interview (voice) | 10 |
+| Content interview (video) | 20 |
+| Guided Twin interview | 0 (free) |
 | Agent interview | ~70 |
+
+Content interview credits are charged once when the interview finishes, not per turn, and abandoned interviews cost nothing.
 
 **Content Twin**
 
 | Action | Credits (approx) |
 |---|---|
 | Twin usage in content | ~100 |
-| Twin training | ~250 per asset |
+| Twin training ingest (manual uploads & pins) | 50 per asset |
 | Twin chat | ~100 |
+
+Twin training ingest is free while your Twin IQ Score is below 100, then costs 50 credits per asset.
 
 **Agent Studio**
 
 | Action | Credits (approx) |
 |---|---|
-| Agent chat | ~200 |
-| Agent topic discovery | ~650 |
-| Agent content calendar | ~500 |
-| Trend analysis | ~600 |
+| Agent Studio chat turn | Dynamic (actual token cost) |
+| Plan Ahead idea generation | Dynamic (token-based) |
+| Plan Ahead calendar | 5 |
 
-Some features scale based on output depth. Agent Studio consumes more credits than single-step actions because it bundles ideation, agent reasoning, and content calendar planning across time horizons. Agent topic discovery and content calendars scale with research depth and planning scope. Twin training scales with the size of the training batch.
+Some features scale based on output depth. Agent Studio chat turns and Plan Ahead idea generation are billed dynamically based on actual token usage, while generating the Plan Ahead calendar itself costs a flat 5 credits. The first 2 Plan Ahead idea generation runs per workspace, and idea generation from the handoff path, are free. TrendMaster trend discovery doesn't consume credits.
 
 ## Credits per plan
 
