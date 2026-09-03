@@ -12,7 +12,7 @@ Credits are consumed by any action that requires AI reasoning or generation:
 
 - Writing, editing, and repurposing content
 - Content planning and ideation
-- Trend analysis and hook simulations
+- Hook & angle simulations
 - Agent-based reasoning and coordination (Agent Team)
 - Twin usage, training, and chat
 
@@ -26,9 +26,9 @@ Credit usage is approximate and varies with content length and complexity.
 
 | Feature | Credits (approx) |
 |---|---|
-| Post creation | ~30 |
-| Article creation | ~50 |
-| Image generation | ~125 |
+| Post generation | 33 |
+| Article generation | 51 |
+| Image generation | 124 |
 | Citations / fact-checking | ~30 |
 | Hook & angle simulation | ~15 |
 | Audio transcription | ~30 |
@@ -38,30 +38,45 @@ Credit usage is approximate and varies with content length and complexity.
 
 | Feature | Credits (approx) |
 |---|---|
-| Interview or Brainstorm session | ~250 |
-| Twin-guided interview | ~250 |
+| Brainstorm message | Dynamic, ~42 avg |
+| Plan Ahead message | Dynamic, ~31–54 |
+| Content interview (text) | 5 |
+| Content interview (voice) | 10 |
+| Content interview (video) | 20 |
+| Guided Twin interview | 0 (free) |
 | Agent interview | ~70 |
+
+<Note>
+  Content interview credits are charged once when the interview finishes, not per turn. If you abandon an interview before finishing, no credits are consumed.
+</Note>
 
 **Content Twin**
 
 | Feature | Credits (approx) |
 |---|---|
 | Twin usage in content | ~100 |
-| Twin training | ~250 per asset |
+| Twin training ingest (manual uploads & pins) | 50 per asset |
 | Twin chat | ~100 |
+
+<Note>
+  Twin training ingest is free while your Twin IQ Score is below 100. Once your Twin IQ passes 100, each asset costs 50 credits.
+</Note>
 
 **Agent Studio**
 
 | Feature | Credits (approx) |
 |---|---|
-| Agent chat | ~200 |
-| Agent topic discovery | ~650 |
-| Agent content calendar | ~500 |
-| Trend analysis | ~600 |
+| Agent Studio chat turn | Dynamic (actual token cost) |
+| Plan Ahead idea generation | Dynamic (token-based) |
+| Plan Ahead calendar | 5 |
+
+<Note>
+  The first 2 Plan Ahead idea generation runs per workspace are free, as is idea generation from the handoff path. TrendMaster trend discovery doesn't consume credits.
+</Note>
 
 ## Agent Studio credit behavior
 
-Agent Studio is a coordinated multi-agent system, not a single action. Each run bundles ideation generation, agent chat and reasoning, and content calendar planning across a chosen time horizon. This is why it consumes more credits than single-step features — a 30-day content calendar uses significantly more credits than a 7-day plan. Choose the planning scope that matches your current need to manage credit usage efficiently.
+Agent Studio is a coordinated multi-agent system, not a single action. A Plan Ahead run bundles idea generation, chat and reasoning, and calendar planning. Chat turns and idea generation are billed dynamically based on actual token usage, while generating the calendar itself costs a flat 5 credits.
 
 ## Features with dynamic credit usage
 
@@ -70,10 +85,11 @@ Some features scale their credit draw based on the depth or size of the output:
 | Feature | Credit behavior |
 |---|---|
 | Content generation | Charged per generated output |
-| Agent content calendar | Scales with planning scope |
-| Twin-guided interview | Scales with interview depth |
-| Twin training | Scales with training batch size |
-| Agent topic discovery | Scales with research depth |
+| Brainstorm message | Dynamic, based on message length and complexity (~42 avg) |
+| Plan Ahead message | Dynamic, based on message length and complexity (~31–54) |
+| Agent Studio chat turn | Dynamic, charged at actual token cost |
+| Plan Ahead idea generation | Dynamic, token-based; first 2 runs per workspace and the handoff path are free |
+| Twin training ingest | Free below Twin IQ 100, 50 credits per asset above |
 
 ## Credit allowances by plan
 
