@@ -73,3 +73,122 @@ When publishing to WordPress.com, Pressmaster displays your site's categories so
 <Tip>
   Once your blog is connected, you can also publish to it from the Agent-Team's Calendar, select your blog as the destination for any content item.
 </Tip>
+
+## Troubleshooting
+
+### "Invalid credentials" error (WordPress.org)
+
+If you've completed the WordPress.org setup (application password and site URL) but the connection fails with an "Invalid credentials" message, the WordPress REST API is typically rejecting the request with:
+
+```json
+{"code":"rest_not_logged_in","message":"You are not currently logged in.","data":{"status":401}}
+```
+
+This error appears specifically on requests that require authorization, unauthenticated requests to your site typically still work fine.
+
+<Note>
+  There's no alternate authentication method for WordPress.org (self-hosted). If your site is actually hosted on WordPress.com, use the **WordPress.com** tab above instead, its OAuth connection doesn't hit this error. If your blog runs on a different platform, see the [Webflow](/integrations/webflow), [Wix](/integrations/wix), or [Ghost](/integrations/ghost) integration guides.
+</Note>
+
+**Confirm you're using the right domain**
+
+If your business has both a `.com` and a `.org` (or similar) domain, confirm which one your WordPress site actually lives on, and that it's the one you entered in the **Site URL** field. Entering the wrong domain will always produce this error.
+
+**Test the REST API directly**
+
+While logged out of WordPress, visit this URL in your browser (replace `[your-domain]` with your actual domain):
+
+```text
+https://[your-domain]/wp-json/wp/v2/users/me
+```
+
+- A **clean JSON response** (even the same `rest_not_logged_in` error) means the REST API is reachable and the problem is authentication-specific. Skip to **Fix: Authorization header not passed through** below.
+- A **blank page, a generic 403/406, or a page from your hosting provider** (not JSON) means the request isn't reaching WordPress at all. Start with **Fix: .htaccess blocking the request** below.
+
+**Fix: .htaccess blocking the request**
+
+This is the most common cause, try it first regardless of what the REST API test above showed.
+
+<Steps>
+  <Step title="Regenerate permalinks">
+    In WordPress Admin, go to **Settings > Permalinks** and click **Save Changes** without making any changes. This regenerates a clean `.htaccess` file automatically and often resolves the issue on its own.
+  </Step>
+  <Step title="Manually reset .htaccess (if step 1 doesn't help)">
+    Back up your current `.htaccess` file first, download a copy or rename it to `.htaccess_backup`. The file is in your WordPress root directory (usually `/public_html/` or `/www/`). Replace its contents with:
+
+    ```apache
+    # BEGIN WordPress
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+
+    # Add trailing slash to /wp-admin
+    RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+    </IfModule>
+    # END WordPress
+    ```
+  </Step>
+</Steps>
+
+**Fix: Authorization header not passed through**
+
+If the REST API test still returns a clean JSON `rest_not_logged_in` error after applying the fix above, your server is reachable but stripping the `Authorization` header before it reaches WordPress. This is a known issue on some Apache/PHP hosting setups, independent of the WordPress rewrite rules.
+
+Add this to the very top of your `.htaccess` file, above the `# BEGIN WordPress` block:
+
+```apache
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+```
+
+Your full file should look like:
+
+```apache
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+```
+
+<Note>
+  This fix resolves most cases, but not all, it isn't universally guaranteed. If it doesn't work, ask your hosting provider whether PHP is running in CGI or FastCGI mode. In that mode, Apache can strip the Authorization header regardless of `.htaccess` rules. Your host needs to either enable `CGIPassAuth On`, or confirm PHP is running as a native Apache module instead.
+</Note>
+
+**Fix: Hosting firewall or security plugin blocking the request**
+
+If the REST API test returned something other than clean JSON (a blank page, a generic 403/406, or a page branded by your host's security product), the request is being blocked before it reaches WordPress. Check:
+
+- **Security plugins** (Wordfence, Sucuri, etc.), review the plugin's firewall or activity log for blocked requests around the time of your connection attempt. These often block REST API authorization headers by default.
+- **Host-level firewall (WAF)**, some hosts (GoDaddy, SiteGround, etc.) run their own firewall in front of WordPress. Ask your host whether `Authorization` headers or `/wp-json/` requests are being blocked.
+
+<Note>
+  Pressmaster doesn't currently publish a stable list of outbound IP addresses to whitelist with your host. Focus troubleshooting on the header-passthrough and firewall-log checks above instead.
+</Note>
+
+**Still not working?**
+
+Contact the Pressmaster support team at [support@pressmaster.ai](mailto:support@pressmaster.ai) with:
+
+- The exact response from the `/wp-json/wp/v2/users/me` test
+- Which fixes you've already tried (permalinks reset, manual `.htaccess`, Authorization header rule)
+- Your hosting provider's name, and whether PHP CGI/FastCGI mode was confirmed
+- Any firewall or security plugin logs you can share
