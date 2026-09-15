@@ -76,7 +76,8 @@
               "integrations/wordpress",
               "integrations/webflow",
               "integrations/wix",
-              "integrations/ghost"
+              "integrations/ghost",
+              "integrations/mcp"
             ]
           },
           {

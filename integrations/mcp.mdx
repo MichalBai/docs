@@ -1,70 +1,116 @@
 ---
-title: "How to Connect Pressmaster to Claude (MCP)"
-icon: "leaf"
+title: "Connecting Pressmaster to Claude, ChatGPT, and other AI tools (MCP)"
+sidebarTitle: "MCP"
+description: "Connect Pressmaster to Claude, ChatGPT, or any MCP-compatible AI tool so it can read from and act on your Content Library, Brand Guide, Twin, and performance analytics."
 ---
 
-Pressmaster's MCP server lets you drive your entire content workflow from inside Claude — creating drafts, running interviews, scheduling posts, and pulling analytics — without opening the Pressmaster app.
+Pressmaster can connect directly to the AI tools you already use through MCP (Model Context Protocol). Once connected, your AI assistant can pull from and act on your Pressmaster workspace without you switching tabs.
 
 **MCP URL:** `https://app.pressmaster.ai/mcp`
 
-MCP (Model Context Protocol) is an open standard that lets AI assistants connect directly to external tools. Instead of Claude telling you what to do in Pressmaster, Claude does it: creates the draft, attaches the channels, sets the schedule, reads the numbers back.
-
-Before you start An active Pressmaster account and workspace Claude on a plan that supports custom connectors (Pro, Max, Team, or Enterprise)
+MCP is an open standard that lets AI assistants connect directly to external tools. Instead of your assistant telling you what to do in Pressmaster, it does it: creates the draft, attaches the channels, sets the schedule, reads the numbers back.
 
 You don't need an API key. Authentication runs through OAuth in your browser.
 
-Setup
+## What you can do once connected
 
-1. Open connector settings
+- **Content Library**, read and create content
+- **Brand Guide and Brand Voice**, reference your brand settings
+- **Twin**, retrieve and train on your Twin, plus one-shot chat with it
+- **Performance analytics**, pull your content performance data
 
-In Claude (web or desktop), go to Settings → Connectors, scroll past the directory, and click Add custom connector.
+<Note>
+  MCP exposes a curated set of Pressmaster capabilities. It does not give external tools access to Agent Studio chat, your agent's internal prompts, memory, skills, or scheduled tasks.
+</Note>
 
-2. Add the server
+## How to connect
 
-Paste the URL:
+<Steps>
+  <Step title="Open MCP settings">
+    Go to **Settings > MCP** in your Pressmaster account.
+  </Step>
+  <Step title="Choose your tool">
+    Select the tab for your tool: **Claude**, **ChatGPT**, or **Other**.
+  </Step>
+  <Step title="Follow the setup guide">
+    Follow the 3-step setup guide shown for your tool, using the copyable MCP server URL provided.
+  </Step>
+</Steps>
 
-[https://app.pressmaster.ai/mcp](https://app.pressmaster.ai/mcp)
+You can also start setup from the **Connect** banner on your dashboard, or from the **MCP** card on the **Get Started** page.
 
-Name it "Pressmaster" and confirm.
+<Tabs>
+  <Tab title="Claude">
+    Before you start, you'll need an active Pressmaster account and workspace, and Claude on a plan that supports custom connectors (Pro, Max, Team, or Enterprise).
 
-3. Authorize
+    <Steps>
+      <Step title="Open connector settings">
+        In Claude (web or desktop), go to **Settings > Connectors**, scroll past the directory, and click **Add custom connector**.
+      </Step>
+      <Step title="Add the server">
+        Paste the URL `https://app.pressmaster.ai/mcp`, name it "Pressmaster", and confirm.
+      </Step>
+      <Step title="Authorize">
+        Claude opens a Pressmaster login window. Sign in and approve access.
+      </Step>
+      <Step title="Verify">
+        Start a new conversation and ask "What's in my Pressmaster content library?" If Claude returns your actual drafts and stages, you're connected.
+      </Step>
+    </Steps>
 
-Claude opens a Pressmaster login window. Sign in and approve access.
+    <Note>
+      The connection binds to the workspace you authorize. If you belong to more than one workspace, make sure you're signed into the right one before approving.
+    </Note>
+  </Tab>
+  <Tab title="ChatGPT">
+    Before you start, you'll need an active Pressmaster account and workspace, and a ChatGPT plan that supports custom connectors.
 
-Important: the connection binds to the workspace you authorize. If you belong to more than one workspace, make sure you're signed into the right one before approving.
+    From the **ChatGPT** tab in **Settings > MCP**, follow the setup guide shown: add a custom connector using the Pressmaster MCP URL, then complete the OAuth sign-in to authorize your Pressmaster workspace.
+  </Tab>
+  <Tab title="Other">
+    Any MCP-compatible AI tool can connect the same way. From the **Other** tab in **Settings > MCP**, follow the setup guide shown for adding a custom MCP connector using the Pressmaster MCP URL, then complete the OAuth sign-in to authorize your Pressmaster workspace.
+  </Tab>
+</Tabs>
 
-4. Verify
+## What you can ask
 
-Start a new conversation and ask:
+**Create content in any format.** Articles, social posts, newsletters, video scripts. Ask, review in chat, and it lands in your Content Library as a draft.
 
-"What's in my Pressmaster content library?"
+*"Write a LinkedIn post about why founders confuse their champion with their budget holder. Use my brand voice."*
 
-If Claude returns your actual drafts and stages, you're connected. If it comes back empty and you know you have content, you're likely authorized into the wrong workspace — disconnect and reauthorize.
+**Run content interviews.** Start a Pressmaster interview from your AI assistant, answer the questions, and get structured source material back.
 
-What you can do
+*"Start a content interview on go-to-market positioning failures."*
 
-Create content in any format Articles, social posts, newsletters, video scripts. Ask, review in chat, and it lands in your Content Library as a draft.
+**Write against your Brand Guide.** Your assistant can read your brand guide and voices, so output sounds like you rather than like a model.
 
-"Write a LinkedIn post about why founders confuse their champion with their budget holder. Use my brand voice."
+**Schedule and publish.** Attach connected channels, set a publish time, or push live now.
 
-Run content interviews Start a Pressmaster interview from Claude, answer the questions, and get structured source material back.
+*"Schedule that post to LinkedIn for Thursday at 9am."*
 
-"Start a content interview on go-to-market positioning failures."
+**Read performance data.** Reach, impressions, engagement, follower deltas, and top posts for any date range.
 
-Write against your Brand Guide Claude can read your brand guide and voices, so output sounds like you rather than like a model.
+*"Which posts performed best in the last 30 days, and what do they have in common?"*
 
-Schedule and publish Attach connected channels, set a publish time, or push live now.
+**Save and load ideas.** Anything worth keeping goes into Saved Ideas and comes back when you need it.
 
-"Schedule that post to LinkedIn for Thursday at 9am."
+**Train and query your Digital Twin.** Ingest text, run knowledge interviews, and chat with it in the same session.
 
-Read performance data Reach, impressions, engagement, follower deltas, and top posts for any date range.
+## Troubleshooting
 
-"Which posts performed best in the last 30 days, and what do they have in common?"
+| Symptom | Fix |
+|---|---|
+| Tools don't appear after connecting | Start a new conversation, your AI tool loads the tool list at session start |
+| Authorization keeps failing | Confirm you're logged into the correct Pressmaster account in the same browser, clear the session, and retry |
+| Analytics return zeros | Expected if nothing is published yet, or a platform sync hasn't run. Ask your assistant to check sync status for per-channel timestamps |
+| A post won't schedule | Scheduling needs a connected, credentialed channel and a future timestamp. Reconnect expired channels in Pressmaster first |
+| A draft won't update | Only drafts in an editable stage can be changed. Scheduled, published, and completed items are locked, move it back to a draft stage first |
+| Your assistant asks for confirmation on every action | Normal. Write and publish actions require your approval before they run |
 
-Save and load ideas — anything worth keeping goes into Saved Ideas and comes back when you need it.
+## Where it's available
 
-Train and query your Digital Twin — ingest text, run knowledge interviews, and chat with it in the same session.
+MCP is a paid-plan feature, available on the Leader plan and up.
 
-Troubleshooting Symptom	Fix Tools don't appear after connecting	Start a new conversation — Claude loads the tool list at session start Authorization keeps failing	Confirm you're logged into the correct Pressmaster account in the same browser, clear the session, retry Analytics return zeros	Expected if nothing is published yet, or a platform sync hasn't run. Ask Claude to check sync status for per-channel timestamps A post won't schedule	Scheduling needs a connected, credentialed channel and a future timestamp. Reconnect expired channels in Pressmaster first A draft won't update	Only drafts in an editable stage can be changed. Scheduled, published, and completed items are locked — move it back to a draft stage Claude asks for confirmation on every action	Normal. Write and publish actions require your approval before they run Why it's worth doing
-
-Content tools normally live in an app you have to remember to open. As an MCP connector, Pressmaster lives inside the conversation where you're already thinking — so an idea can become a scheduled post without a context switch, and without dying in a notes app first.
+<Tip>
+  Content tools normally live in an app you have to remember to open. As an MCP connector, Pressmaster lives inside the conversation where you're already thinking, so an idea can become a scheduled post without a context switch.
+</Tip>
