@@ -37,8 +37,17 @@
               "dashboard/overview",
               "find-ideas/overview",
               "content-library/overview",
-              "calendar/overview",
-              "performance/overview"
+              "calendar/overview"
+            ]
+          },
+          {
+            "group": "Performance",
+            "pages": [
+              "performance/overview",
+              "performance/growth",
+              "performance/content",
+              "performance/leads",
+              "performance/narrative"
             ]
           },
           {
