@@ -43,7 +43,8 @@
           {
             "group": "Tools",
             "pages": [
-              "tools/social-inbox"
+              "tools/social-inbox",
+              "creating-content/interview"
             ]
           },
           {
@@ -63,7 +64,6 @@
               "creating-content/explore-ideas",
               "creating-content/instant-creation",
               "creating-content/plan-ahead",
-              "creating-content/interview",
               "creating-content/editor"
             ]
           },
