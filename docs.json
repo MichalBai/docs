@@ -155,12 +155,9 @@
             ]
           },
           {
-            "group": "Playbooks",
-            "pages": ["agent-studio/playbooks"]
-          },
-          {
             "group": "Roadmap",
             "pages": [
+              "agent-studio/playbooks",
               "agent-studio/agents-managing-agents"
             ]
           }
