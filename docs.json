@@ -43,7 +43,7 @@
           {
             "group": "Tools",
             "pages": [
-              "tools/inbox",
+              "tools/notifications",
               "tools/social-inbox",
               "tools/chat-history",
               "creating-content/interview"
@@ -155,12 +155,9 @@
             ]
           },
           {
-            "group": "Playbooks",
-            "pages": ["agent-studio/playbooks"]
-          },
-          {
             "group": "Roadmap",
             "pages": [
+              "agent-studio/playbooks",
               "agent-studio/agents-managing-agents"
             ]
           }
