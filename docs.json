@@ -43,7 +43,9 @@
           {
             "group": "Tools",
             "pages": [
+              "tools/inbox",
               "tools/social-inbox",
+              "tools/chat-history",
               "creating-content/interview"
             ]
           },
