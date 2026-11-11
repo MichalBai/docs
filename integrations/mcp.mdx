@@ -51,7 +51,7 @@ You can also start setup from the **Connect** banner on your dashboard, or from 
         Paste the URL `https://app.pressmaster.ai/mcp`, name it "Pressmaster", and confirm.
       </Step>
       <Step title="Authorize">
-        Claude opens a Pressmaster login window. Sign in and approve access.
+        Claude opens a Pressmaster login window. Sign in, choose which workspace the connection should work in, and approve access.
       </Step>
       <Step title="Verify">
         Start a new conversation and ask "What's in my Pressmaster content library?" If Claude returns your actual drafts and stages, you're connected.
@@ -59,18 +59,31 @@ You can also start setup from the **Connect** banner on your dashboard, or from 
     </Steps>
 
     <Note>
-      The connection binds to the workspace you authorize. If you belong to more than one workspace, make sure you're signed into the right one before approving.
+      You choose which workspace a connection works in when you authorize it. If you belong to more than one workspace, double-check you've selected the right one, you can reconnect to switch later.
     </Note>
   </Tab>
   <Tab title="ChatGPT">
     Before you start, you'll need an active Pressmaster account and workspace, and a ChatGPT plan that supports custom connectors.
 
-    From the **ChatGPT** tab in **Settings > MCP**, follow the setup guide shown: add a custom connector using the Pressmaster MCP URL, then complete the OAuth sign-in to authorize your Pressmaster workspace.
+    From the **ChatGPT** tab in **Settings > MCP**, follow the setup guide shown: add a custom connector using the Pressmaster MCP URL, then complete the OAuth sign-in to choose your workspace and authorize it.
+
+    ### The Pressmaster app inside ChatGPT
+
+    Once connected, Pressmaster also appears as an app inside ChatGPT with its own views, not just tool calls:
+
+    - **Content Library**, browse your content as a board or a list
+    - **Editing per channel**, open a piece of content and edit the version for a specific channel
+    - **Performance**, a view with **Narrative** and **Leads** tabs, matching what you'd see in Pressmaster
+    - **Open in Pressmaster**, jump from any item straight to that item in the web app
   </Tab>
   <Tab title="Other">
-    Any MCP-compatible AI tool can connect the same way. From the **Other** tab in **Settings > MCP**, follow the setup guide shown for adding a custom MCP connector using the Pressmaster MCP URL, then complete the OAuth sign-in to authorize your Pressmaster workspace.
+    Any MCP-compatible AI tool can connect the same way. From the **Other** tab in **Settings > MCP**, follow the setup guide shown for adding a custom MCP connector using the Pressmaster MCP URL, then complete the OAuth sign-in to choose your workspace and authorize it.
   </Tab>
 </Tabs>
+
+## Managing your connection
+
+Go to **Settings > MCP** to see your connection history, every authorization, which tool it was for, and when. The list is scrollable and can be cleared.
 
 ## What you can ask
 
@@ -84,7 +97,7 @@ You can also start setup from the **Connect** banner on your dashboard, or from 
 
 **Write against your Brand Guide.** Your assistant can read your brand guide and voices, so output sounds like you rather than like a model.
 
-**Schedule and publish.** Attach connected channels, set a publish time, or push live now.
+**Schedule and publish.** Attach connected channels, set a publish time, push live now, or unschedule a post you've changed your mind about. You can also set a first comment and upload and publish video, including its YouTube category and visibility.
 
 *"Schedule that post to LinkedIn for Thursday at 9am."*
 
@@ -95,6 +108,16 @@ You can also start setup from the **Connect** banner on your dashboard, or from 
 **Save and load ideas.** Anything worth keeping goes into Saved Ideas and comes back when you need it.
 
 **Train and query your Digital Twin.** Ingest text, run knowledge interviews, and chat with it in the same session.
+
+<Note>
+  Actions that would overwrite or publish something ask for confirmation first. Lists come back newest first, with other sort options available, and content totals match what you'd see on the board in Pressmaster.
+</Note>
+
+## Who can connect
+
+Besides Claude, ChatGPT, and other named AI tools, MCP supports self-registering custom clients, so any compatible client can register itself without Pressmaster adding it by name first. Agency workspaces can connect the same way as any other workspace.
+
+Access tokens last one hour. Your AI tool refreshes the connection automatically, you shouldn't need to reauthorize unless the refresh itself fails.
 
 ## Troubleshooting
 
