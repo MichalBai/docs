@@ -145,7 +145,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["agent-studio/getting-started", "agent-studio/connectors"]
+            "pages": ["agent-studio/getting-started", "agent-studio/assistant", "agent-studio/connectors"]
           },
           {
             "group": "Advanced",
