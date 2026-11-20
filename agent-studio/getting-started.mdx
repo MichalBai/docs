@@ -28,9 +28,9 @@ The Notetaker skill extracts durable insights from the call transcript, Strategi
 
 ### Get a Monday morning briefing without logging in
 
-*You tell Heartbeat: "Every Monday, check last week's performance and brief me."*
+*You tell your Assistant: "Every Monday, check last week's performance and brief me."*
 
-Analyst pulls the week's metrics, Heartbeat flags what needs attention and writes the summary.
+Analyst pulls the week's metrics, your Assistant flags what needs attention and writes the summary.
 
 **What lands:** A briefing in your Slack, WhatsApp, or Telegram, waiting for you before you've opened the app.
 
@@ -63,12 +63,11 @@ Your agent team is ready to use on day one. It ships with built-in research tool
 
 | Agent | Role |
 |---|---|
-| **Orchestrator** *(you name it)* | Runs the operation, briefs and delegates to the team, quality-checks all outputs |
+| **Orchestrator** *(you name it)* | Also your **Assistant**: works proactively, wakes up on its own, starts work, and messages you only when it matters. Runs the operation, briefs and delegates to the team, quality-checks all outputs. See [Assistant](/agent-studio/assistant). |
 | **Scout** | Finds trending topics and audience signals |
 | **Strategist** | Turns briefs and context into hooks and content plans |
 | **Creator** | Handles all content creation across formats |
 | **Analyst** | Tracks content performance and surfaces insights |
-| **Heartbeat** | Always-on standup persona that reviews your operation and flags what needs attention |
 
 You can disable any default agent and replace it with your own. To add a custom agent, click **Add Agent** or describe what you need in chat and Pressmaster builds it for you.
 
@@ -83,6 +82,10 @@ When your agents create content, they follow the same rules you do:
 - **Images**, agents choose which pieces of content get an image and generate per-channel versions, following your Creative Director so visuals stay on-brand.
 - **Twin grounding**, agents ground content in your Twin by default, keeping it in your voice without you asking each time. Opt out on a per-piece basis when you want something that isn't grounded in your Twin.
 - **Video**, agents can attach and publish video. Video scripts they write are saved as their own **Video Script** items in your Content Library.
+- **Facts only**, agents write only from the facts in your material. They leave out figures, quotes, and customer stories they can't support, and ask you for facts first when there are none.
+- **Brand voice**, the full brand voice is used at every writing step. Posts, newsletters, and video scripts have no separate Tone setting, and articles keep theirs.
+- **First comments**, they aren't generated automatically. Agents can read and set a post's first comment.
+- **One request, one draft**, a single request saves one draft in your Content Library.
 
 Before scheduling anything, agents check that the destination channel is actually connected, so a task doesn't end up stuck waiting on a channel you forgot to reconnect.
 
@@ -118,7 +121,7 @@ Your agents ship pre-loaded with system skills built by Pressmaster. Ready on da
 | **Facebook Content** | Creates content for Facebook |
 | **Longform/Articles Content** | Transforms ideas and briefs into authoritative long-form content |
 | **Content Quality Standards** | Reviews every piece against precision quality criteria |
-| **ATLAS Voice & Operating Principles** | Heartbeat voice and behavior guide for consistent identity |
+| **ATLAS Voice & Operating Principles** | Assistant voice and behavior guide for consistent identity |
 
 Then make them yours:
 
@@ -146,6 +149,8 @@ Every member of your team gets their own agent. Each agent is tied to that perso
 ## How credits work
 
 Agent Studio uses a **25% markup** on the underlying AI model costs. You pay for what your agents actually use, no flat monthly fee for compute. You can monitor usage and set spending limits per workspace from the account settings.
+
+Work your [Assistant](/agent-studio/assistant) starts on its own doesn't use your credits on paid plans. Work you start yourself does.
 
 **Which channel should you choose?** Pick the app you already use most — the goal is to remove friction, not add it. If you live in Slack, connect Slack. If Telegram or WhatsApp is your main messaging app, use that. The more natural the channel feels, the more consistently you'll use it.
 
