@@ -32,15 +32,19 @@ The Paused column shows why a task is paused, you paused it yourself, inactivity
 
 Click into any task to see its subtasks, the prompt it used, and a progress log. On finished, failed, and cancelled tasks, click **Go to chat** to jump straight to the conversation that produced it. To add a task manually, click **Add Task** or send the instruction directly via your connected channel.
 
+A task that asks for several posts is split into one task per post, up to 20, each with its own card. A task waiting on other work shows in **In Progress** with a **Waiting** badge. Opening a finished task from the Dashboard shows its artifact.
+
+You can create recurring tasks yourself on chosen weekdays at a set time, and edit schedules the agent created.
+
 ## Background task scheduling
 
 Set up tasks, routines, and workflows with deadlines and priorities. Agents execute them in the background on their own schedule, work gets done while you sleep. Truly autonomous execution.
 
 Recurring tasks can run on a weekday schedule, not just daily or at fixed intervals. Before each scheduled run, Pressmaster checks that the workspace has enough credits, if a run is skipped for lack of credits three times in a row, the schedule switches itself off rather than continuing to fail silently.
 
-## Heartbeat
+## Assistant switch
 
-Turn your Heartbeat briefings on or off with a single toggle, independent of disabling the Heartbeat agent itself.
+One switch turns the Assistant on or off. It was called Heartbeat before. Only the person who connected the channels can use it. In agency client workspaces the agency owner and member admins can too. See [Assistant](/agent-studio/assistant).
 
 ## Custom Approval Workflows
 
@@ -51,6 +55,12 @@ Define exactly how much autonomy your agents have:
 - Adjust boundaries at any time
 
 Start with more control and scale autonomy as your confidence grows. There's no binary choice between full manual and full handoff.
+
+An approval request goes out once, on the channel the work came from. Approving it from any channel or the app settles it.
+
+## Chat History
+
+Search chats by title. Chats waiting for your approval are listed at the top under **Needs your approval**. See [Chat History](/tools/chat-history) for the full page.
 
 ## Spending caps
 
@@ -64,4 +74,6 @@ Go to **Settings > Activity** to see a full history of what your agents did, whi
 
 ## Artifacts
 
-Research findings and other outputs your agents produce along the way are saved as Artifacts. Click **Create** on an agent's board to generate one directly, each card shows how long ago it was produced, and the agent's profile shows a running count of **Artifacts produced**.
+Research findings and other outputs your agents produce along the way are saved as Artifacts. Click **Create** on an agent's board to generate one directly, each card shows the time as well as the date it was produced, and the agent's profile shows a running count of **Artifacts produced**.
+
+The **Create** menu on an artifact offers **Agent Studio**, **Brainstorm**, **Plan Ahead**, **Instant Creation**, and, when the artifact came from a chat, **Original chat**.
