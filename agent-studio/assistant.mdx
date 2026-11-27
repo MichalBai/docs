@@ -20,6 +20,9 @@ Examples: suggesting trending topics and ideas, drafting replies to new comments
 - Posts, articles, newsletters, and video scripts aren't pasted into the chat. The message links to the item in your Content Library, where you edit, approve, and schedule it.
 - Several messages sent in a row get one combined reply.
 - An approval request goes out once, on the channel the work came from. Approving it from any channel or the app settles that request.
+- A short reply like "yes" answers its most recent question, even one it sent on its own. If two questions are open, or a question offers a choice, it asks which one you mean instead of guessing, and a plain "ok" doesn't approve an older pending request.
+- Proactive messages are capped at a daily limit.
+- It respects your quiet hours. A message is checked against them again right when it's about to be delivered, so work it started earlier doesn't arrive during your quiet hours.
 
 ## What it asks before doing
 
@@ -38,6 +41,18 @@ The Assistant turns on when the first messaging channel is connected. It's never
 
 Agent Studio onboarding asks for a name for your agent, a messaging channel (Slack, Telegram, or WhatsApp), and a publishing account. Existing workspaces start this the first time someone opens Agent Studio. In client workspaces created by an agency, channels and integrations can be skipped and set up later.
 
+Setup's own messages count toward your daily message limit, and your regular proactive routines wait until setup is finished.
+
+## Pausing the Assistant
+
+Tell it in chat, for example "no messages until Friday," or use **Pause messages** in Agent Studio settings. While paused, it keeps working in the background and the results wait for you in the app, and it still answers when you write to it.
+
+You can also pause it from working on its own: ask in chat ("don't do any more work") or tick the option in settings. A banner in settings shows any active pause, with a button to resume.
+
+## Time zone
+
+Tell the Assistant where you are or what time it is in chat, or set it in Agent Studio settings, both stay in sync. If what you say doesn't match your account settings, your time zone updates, and your recurring schedules move with it, keeping their local hour.
+
 ## Who manages it
 
 The person who connected the channels is the channel owner. Only they can add, change, or disconnect channels, and switch the Assistant on or off in Settings. The switch was called Heartbeat before and is now labeled Assistant. Everyone else in the workspace sees who manages it.
@@ -47,6 +62,8 @@ In an agency client workspace, the agency owner and the agency's member admins c
 ## Memory
 
 The Assistant keeps one memory for the workspace. It covers what was said and done in every chat and channel, what you published, approved, or rejected, your goals, and topics you asked it to drop. Everyone operating the workspace shares it. You can read and correct it under **Settings > Memory**. A pending question belongs to the person who was asked, so nobody gets asked twice on two channels.
+
+Rules and instructions you give it stay saved and available in later chats, even if you reworded them, said them a message earlier, or wrote them in a language other than English. When it wants to remember something you didn't say in your own words, for example a line from a forwarded email, it asks you first and shows what it would save.
 
 ## Credits
 
